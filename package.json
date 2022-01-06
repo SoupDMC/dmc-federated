@@ -1,0 +1,17 @@
+{
+  "name": "dmc2",
+  "version": "2.0.0",
+  "description": "back to the drawing board",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soup",
+  "license": "MIT",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.8",
+    "express": "^4.17.2",
+    "node-fetch": "^2.6.6",
+    "sqlite3": "^5.0.2"
+  }
+}

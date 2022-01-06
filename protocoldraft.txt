@@ -1,0 +1,29 @@
+[server <=> server]
+GET /groups :		list all groups on server
+GET /user/[username] :	get user info
+POST /subscribe :	subscribe a user to a group
+	user: string
+	server: string
+	group: int
+POST /unsubscribe :	unsubscribe a user from a group
+	user: string
+	server: string
+	group: int
+POST /receive :		receive subscribed event data
+	type: string
+	server: string
+	author: string
+	group: int
+	channel: int
+	data: {brrrap}
+
+[client <=> server]
+GET /groups :		list all groups on server (use this only if user homeserver == target server)
+GET /user/[username] :	get user info (use this only if user homeserver == target server)
+POST /do :		do something (like sending a message)
+	type: string
+	server: string
+	group: int
+	channel: int
+	data: {mmm feet}
+	
